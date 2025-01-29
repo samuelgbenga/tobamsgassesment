@@ -1,0 +1,94 @@
+:root {
+  --dark-purple: #2a27c9;
+  --light-purple: #514cff;
+  --dark-purple-10: rgba(42, 39, 201, 0.05);
+  --light-purple-15: rgba(81, 76, 255, 0.15);
+
+  --green-accent: #76decc;
+  --pink-accent: #ea6cbc;
+  --red-accent: #fb4539;
+
+  --dark-100: #060714;
+  --dark-90: #262840;
+  --grey-100: #7780a1;
+  --grey-50: #dde0e8;
+  --grey-20: #f1f1f6;
+  --grey-10: #f2f3f6;
+
+  --white: #fff;
+
+  --font-xs: 12px;
+  --font-s: 14px;
+  --font-ms: 16px;
+  --font-l: 20px;
+  --font-xl: 24px;
+
+  --border-thin: solid 0.05px rgba(128, 128, 128, 0.2);
+}
+
+.firstCard {
+  min-height: 480px;
+
+  max-width: 310px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  gap: 16px;
+}
+
+.firstCard > div {
+  width: 100%;
+}
+
+.firstCard > .image {
+  flex-grow: 1; /* Makes the div take up available space */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firstCard > .image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+.border {
+  border: var(--border-thin);
+}
+.noborder {
+  border: none;
+}
+.firstCard > .price {
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+}
+.firstCard > .price > :nth-child(2) {
+  background-color: var(--dark-purple);
+  padding: 4px 15px;
+  color: var(--light-purple);
+  border-radius: 2px;
+}
+
+.firstCard > .time {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-xs);
+}
+.firstCardFooter {
+  display: flex;
+  justify-content: space-between;
+  border-top: var(--border-thin);
+  padding-top: 7px;
+}
+
+.firstCardFooter > .space {
+  margin-left: 8px; /* Adjust as needed */
+}

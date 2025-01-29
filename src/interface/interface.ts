@@ -27,3 +27,21 @@ export interface ButtonProps {
     extraElement?: React.ReactNode;
     variant?: "largeInput" | "smallInput";
   }
+
+  export interface FirstCardProps {
+    description: string;
+    price: string;
+    time: string;
+    variant:  "noborder" | "border";
+    image: string;
+    noPeopleBidding: number;
+    islike: boolean;
+    noOfLike: number;
+  }
+
+  export interface FirstCardFooterProps {
+    noPeopleBidding: number;
+    islike: boolean;
+    noOfLike: number;
+   
+  }

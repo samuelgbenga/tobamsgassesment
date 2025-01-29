@@ -26,6 +26,8 @@
     --font-ms: 16px;
     --font-l: 20px;
     --font-xl: 24px;
+
+    --border-thin: solid 0.05px rgba(128, 128, 128, 0.2);
   }
 
   .footer p{
@@ -53,18 +55,18 @@
 
   .col {
     padding: 30px; /* Optional: for spacing within each column */
-    border: solid 0.05px rgba(128, 128, 128, 0.2); /* Even thinner border */
+    border: var(--border-thin); /* Even thinner border */
   }
   .col1 {
     padding: 30px; /* Optional: for spacing within each column */
-    border: solid 0.05px rgba(128, 128, 128, 0.2); /* Even thinner border */
+    border:  var(--border-thin); /* Even thinner border */
     border-right: none;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
   }
   .col3 {
     padding: 30px; /* Optional: for spacing within each column */
-    border: solid 0.05px rgba(128, 128, 128, 0.2); /* Even thinner border */
+    border:  var(--border-thin); /* Even thinner border */
     border-left: none; /* Remove right border */
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;

@@ -32,6 +32,8 @@
   --font-ms: 16px;
   --font-l: 20px;
   --font-xl: 24px;
+
+  --border-thin: solid 0.05px rgba(128, 128, 128, 0.2);
 }
 
 body {
