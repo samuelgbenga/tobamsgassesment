@@ -7,14 +7,18 @@ import LinkedInIcon from "../../assets/LinkedInIcon";
 import GithubIcon from "../../assets/GithubIcon";
 import XIcon from "../../assets/XIcon";
 import InstagramIcon from "../../assets/InstagramIcon";
+import Input from "../input/Input";
 
 const Footer = () => {
+
+    const signInButton = <span className={style.signInButton}>Sign in</span>
+
   return (
     <div className={style.footer}>
       <div className={style.col1}>
         <div className={style.innerbox}>
           <div className={style.logo}>
-            <Logo/> NFT MARKET
+            <Logo /> NFT MARKET
           </div>
           <div className={style.col1Items}>
             <span>Support</span>
@@ -36,11 +40,21 @@ const Footer = () => {
           </div>
 
           <div className={style.col1Items}>
-            <span><Facebook/></span>
-            <span><LinkedInIcon/></span>
-            <span><GithubIcon/></span>
-            <span><XIcon/></span>
-            <span><InstagramIcon/></span>
+            <span>
+              <Facebook />
+            </span>
+            <span>
+              <LinkedInIcon />
+            </span>
+            <span>
+              <GithubIcon />
+            </span>
+            <span>
+              <XIcon />
+            </span>
+            <span>
+              <InstagramIcon />
+            </span>
           </div>
         </div>
       </div>
@@ -52,7 +66,13 @@ const Footer = () => {
             accusantium quo tenetur quasi molestias! Consequuntur enim dolorem
             commodi porro iure! Obcaecati!
           </p>
-          <div>input bar signup</div>
+          <div>
+            {" "}
+            <Input
+              placeholder="Newsletter"
+              button={signInButton}
+            />{" "}
+          </div>
         </div>
       </div>
     </div>
@@ -60,3 +80,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+

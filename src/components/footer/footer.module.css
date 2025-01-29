@@ -94,4 +94,9 @@
     margin-right: 12px;
   } 
 
+  .signInButton{
+    color: var(--dark-purple);
+    cursor: pointer;
+  }
+
   

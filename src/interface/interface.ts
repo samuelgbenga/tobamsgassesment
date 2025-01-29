@@ -20,3 +20,10 @@ export interface ButtonProps {
     imageUrl?: string;
     children?: React.ReactNode;
   }
+
+  export interface InputProps {
+    placeholder: string;
+    button?: React.ReactNode;
+    extraElement?: React.ReactNode;
+    variant?: "largeInput" | "smallInput";
+  }

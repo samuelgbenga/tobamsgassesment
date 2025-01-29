@@ -1,0 +1,68 @@
+:root {
+  --dark-purple: #2a27c9;
+  --light-purple: #514cff;
+  --dark-purple-10: rgba(42, 39, 201, 0.05);
+  --light-purple-15: rgba(81, 76, 255, 0.15);
+
+  --green-accent: #76decc;
+  --pink-accent: #ea6cbc;
+  --red-accent: #fb4539;
+
+  --dark-100: #060714;
+  --dark-90: #262840;
+  --grey-100: #7780a1;
+  --grey-50: #dde0e8;
+  --grey-20: #f1f1f6;
+  --grey-10: #f2f3f6;
+
+  --white: #fff;
+
+  --font-xs: 12px;
+  --font-s: 14px;
+  --font-ms: 16px;
+  --font-l: 20px;
+  --font-xl: 24px;
+}
+
+.hero {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerBox {
+  width: 40%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchbarIcon {
+  height: 50%;
+
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonElem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-xs);
+  border-left: solid var(--grey-10) 1px;
+  gap: 12px;
+}
+.buttonElem > span {
+  margin: 0 5px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+
+}

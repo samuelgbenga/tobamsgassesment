@@ -9,6 +9,9 @@
   list-style-type: none; /* Remove default list styling */
   display: flex; /* Make the list items horizontal */
   gap: 20px; /* Space between each list item */
+  align-items: center; /* Vertically align items */
+  justify-content: center; /* Horizontally align items */
+  margin-left: 9rem;
 }
 
 .navbar li {

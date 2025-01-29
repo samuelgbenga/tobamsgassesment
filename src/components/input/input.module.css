@@ -1,0 +1,60 @@
+
+:root {
+
+    --dark-purple: #2A27C9;
+    --light-purple: #514CFF;
+    --dark-purple-10:  rgba(42, 39, 201, 0.05);
+    --light-purple-15: rgba(81, 76, 255, 0.15);
+  
+    --green-accent: #76DECC;
+    --pink-accent: #EA6CBC;
+    --red-accent: #FB4539;
+  
+    --dark-100  : #060714;
+    --dark-90  : #262840;
+    --grey-100: #7780A1;
+    --grey-50: #DDE0E8;
+    --grey-20: #F1F1F6;
+    --grey-10: #F2F3F6;
+  
+    --white: #fff;
+  
+  
+    --font-xs: 12px;
+    --font-s: 14px;
+    --font-ms: 16px;
+    --font-l: 20px;
+    --font-xl: 24px;
+  }
+
+  .input {
+    position: relative; /* Ensures absolute positioning works inside */
+    display: inline-block; /* Keeps it inline with content */
+  }
+
+  .input > input {
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    min-width: 16rem;
+    min-height: 2.5rem;
+   
+  }
+
+  .largeInput{
+    height: 3.5rem;
+    width: 25rem;
+  }
+
+  .absElement {
+    position: absolute;
+    top: 50%; /* Aligns vertically */
+    transform: translateY(-50%); /* Centers vertically */
+    right: 0.5rem; /* Moves it to the end of the input */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensures it aligns with the input */
+    pointer-events: none; /* Ensures input clicks still work */
+    
+  }
