@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly between elements */
+  align-items: center; /* Vertically align items */
+  padding: 20px 30px; /* Optional padding for the navbar */
+}
+
+ul {
+  list-style-type: none; /* Remove default list styling */
+  display: flex; /* Make the list items horizontal */
+  gap: 20px; /* Space between each list item */
+}
+
+li {
+  cursor: pointer; /* Optional: make the list items clickable */
+}
+
+.buttons {
+    display: flex;
+    gap: 10px; /* Space between the buttons */
+  }
