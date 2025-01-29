@@ -1,0 +1,97 @@
+
+
+:root {
+
+    --dark-purple: #2A27C9;
+    --light-purple: #514CFF;
+    --dark-purple-10:  rgba(42, 39, 201, 0.05);
+    --light-purple-15: rgba(81, 76, 255, 0.15);
+  
+    --green-accent: #76DECC;
+    --pink-accent: #EA6CBC;
+    --red-accent: #FB4539;
+  
+    --dark-100  : #060714;
+    --dark-90  : #262840;
+    --grey-100: #7780A1;
+    --grey-50: #DDE0E8;
+    --grey-20: #F1F1F6;
+    --grey-10: #F2F3F6;
+  
+    --white: #fff;
+  
+  
+    --font-xs: 12px;
+    --font-s: 14px;
+    --font-ms: 16px;
+    --font-l: 20px;
+    --font-xl: 24px;
+  }
+
+  .footer p{
+    font-size: var(--font-xs);
+    text-align:justify;
+  }
+
+  .footer ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: var(--white);
+  }
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Creates three equal columns */
+    height: 19rem;
+    margin: auto;
+    width: 70%;
+    
+   
+  }
+
+  .col {
+    padding: 30px; /* Optional: for spacing within each column */
+    border: solid 0.05px rgba(128, 128, 128, 0.2); /* Even thinner border */
+  }
+  .col1 {
+    padding: 30px; /* Optional: for spacing within each column */
+    border: solid 0.05px rgba(128, 128, 128, 0.2); /* Even thinner border */
+    border-right: none;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+  .col3 {
+    padding: 30px; /* Optional: for spacing within each column */
+    border: solid 0.05px rgba(128, 128, 128, 0.2); /* Even thinner border */
+    border-left: none; /* Remove right border */
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .innerbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .logo {
+    font-size: var(--font-xl);
+    color: var(--white);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .col1Items{
+    font-size: var(--font-xs);
+
+  }
+
+  .col1Items > span{
+    margin-right: 12px;
+  } 
+
+  

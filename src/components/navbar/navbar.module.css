@@ -5,13 +5,13 @@
   padding: 20px 30px; /* Optional padding for the navbar */
 }
 
-ul {
+.navbar ul {
   list-style-type: none; /* Remove default list styling */
   display: flex; /* Make the list items horizontal */
   gap: 20px; /* Space between each list item */
 }
 
-li {
+.navbar li {
   cursor: pointer; /* Optional: make the list items clickable */
 }
 
