@@ -18,7 +18,7 @@
 
 .primary-button{
   background-color: var(--dark-100);
-  border: solid 2px var(--grey-100);
+  border: var(--border-thin);
   color: var(--grey-100);
 }
 
@@ -26,4 +26,19 @@
     background-color: var(--light-purple);
     border: none;
     color: var(--white);
+  }
+
+  .block-primary-button{
+    background-color: var(--dark-100);
+    border: var(--border-thin);
+    color: var(--grey-100);
+    display: block;
+    width: 100%;
+  }
+
+  .block-secondary-button{
+    background-color: var(--light-purple);
+    border: none;
+    color: var(--white);
+    width: 100%;
   }

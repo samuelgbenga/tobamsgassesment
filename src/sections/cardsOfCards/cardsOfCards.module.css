@@ -1,0 +1,32 @@
+.cardsOfCards {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cardsContainer {
+  max-width: 380px;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--border-thin);
+  border-radius: 16px;
+}
+
+.cardsOfCards > .innerContainer {
+  width: 75%;
+  display: flex;
+  height: 95%;
+  justify-content: space-around;
+}
+.cardsContainer > div > :first-child {
+  text-align: center;
+  margin: 2rem 0;
+  color: var(--white);
+}
+
+.cardsContainer > div > :last-child {
+  margin: 2rem 0;
+}

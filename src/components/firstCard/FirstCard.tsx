@@ -13,12 +13,15 @@ const FirstCard: React.FC<FirstCardProps> = ({
   noOfLike,
   noPeopleBidding,
   islike,
-  bidders
+  bidders,
+  size
 }) => {
   const firstCard = `${style.firstCard} ${style[variant]}`;
 
+  const firstCardClass = size ? `${firstCard} ${style[size]}` : firstCard;
+
   return (
-    <div className={firstCard}>
+    <div className={firstCardClass}>
       <div className={style.image}>
         <img src={image} alt="alternative" />
       </div>

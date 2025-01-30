@@ -12,6 +12,12 @@
   gap: 16px;
 }
 
+.small{
+  min-height: 380px;
+
+  max-width: 210px;
+}
+
 .firstCard > div {
   width: 100%;
 }
@@ -35,6 +41,7 @@
 }
 .noborder {
   border: none;
+  padding: 8px;
 }
 .firstCard > .price {
   display: flex;
@@ -62,12 +69,10 @@
   padding-top: 7px;
   font-size: var(--font-xs);
   align-items: center;
+  color: var(--grey-100);
 }
 
-.firstCardFooter > .space {
-  margin-left: 8px; /* Adjust as needed */
-  
-}
+
 
 .bidders {
   display: flex;
@@ -88,7 +93,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--dark-100); /* Change to your preferred color */
-  color: white;
+  
   font-size: 14px;
   border-radius: 50%;
   position: relative;

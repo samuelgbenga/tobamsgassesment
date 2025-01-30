@@ -22,8 +22,9 @@ const FirstCardFooter: React.FC<FirstCardFooterProps> = ({
             );
           })}
          
-        </div>{" "}
+        </div>{" "} 
         <span>{noPeopleBidding}</span> 
+        people are bidding
       </div>
       <div className={style.theLikes}>
         {islike ? <LikeIcon /> : <NotLikeIcon />}{" "}

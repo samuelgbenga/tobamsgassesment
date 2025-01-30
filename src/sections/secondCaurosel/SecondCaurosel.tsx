@@ -1,53 +1,52 @@
 import React from "react";
-import FirstCard from "../../components/firstCard/FirstCard";
+import { FirstCardProps } from "../../interface/interface";
 import image1 from "../../assets/images/image1.png";
 import image2 from "../../assets/images/image2.png";
 import image3 from "../../assets/images/image3.png";
 import image4 from "../../assets/images/image4.png";
 import image5 from "../../assets/images/image5.png";
-import imageB1 from "../../assets/images/imageB1.png";
-import imageB2 from "../../assets/images/imageB2.png";
-import style from "./cauroselSection.module.css";
-import { FirstCardProps } from "../../interface/interface";
+import style from "./secondCaurosel.module.css";
+import FirstCard from "../../components/firstCard/FirstCard";
+import Button from "../../components/botton/Button";
 
-const CauroselSection = () => {
+const SecondCaurosel = () => {
   const firstCards: FirstCardProps[] = [
     {
       description: "Winner",
-      price: "10. ET",
-      variant: "border",
+      price: "10.ET",
+      variant: "noborder",
       time: "21:12 min left",
       image: image1,
       noOfLike: 12,
       noPeopleBidding: 4,
       islike: true,
-      bidders: [imageB1, imageB2],
+      size: "small",
     },
     {
       description: "Champion",
-      price: "15. ET",
-      variant: "border",
+      price: "15.ET",
+      variant: "noborder",
       time: "15:30 min left",
       image: image2,
       noOfLike: 20,
       noPeopleBidding: 7,
       islike: false,
-      bidders: [imageB2, imageB1],
+      size: "small",
     },
     {
       description: "Contender",
-      price: "8. ET",
-      variant: "border",
+      price: "8.ET",
+      variant: "noborder",
       time: "30:00 min left",
       image: image3,
       noOfLike: 5,
       noPeopleBidding: 2,
       islike: true,
-      bidders: [imageB1, imageB2],
+      size: "small",
     },
     // {
     //   description: "Elite",
-    //   price: "12. ET",
+    //   price: "12.ET",
     //   variant: "border",
     //   time: "10:45 min left",
     //   image: image4,
@@ -55,10 +54,11 @@ const CauroselSection = () => {
     //   noPeopleBidding: 5,
     //   islike: false,
     //   bidders: [imageB1, imageB2],
+    //   size: "small",
     // },
     // {
     //   description: "Master",
-    //   price: "20. ET",
+    //   price: "20.ET",
     //   variant: "border",
     //   time: "05:12 min left",
     //   image: image5,
@@ -66,19 +66,31 @@ const CauroselSection = () => {
     //   noPeopleBidding: 10,
     //   islike: true,
     //   bidders: [imageB1, imageB2],
+    //   size: "small",
     // },
   ];
 
   return (
-    <div className={style.caurosel}>
-      <h2>Latest live auctions</h2>
+    <div className={style.secondCaurosel}>
       <div className={style.innerCaurosel}>
-        {firstCards.map((card, index) => (
-          <FirstCard key={index} {...card} />
-        ))}
+        <h5>OVERLINE</h5>
+        <h2>Most popular live auctions</h2>
+        <div>
+          <Button variant="primary" label="Architecture" />
+          <Button variant="primary" label="Photography" />
+          <Button variant="primary" label="Games" />
+          <Button variant="primary" label="Music" />
+        </div>
+        <div className={style.mainCarousel}>
+          {firstCards.map((card, index) => (
+            <FirstCard key={index} {...card} />
+          ))}
+        </div>
+
+        <Button variant="primary" label="Show more" />
       </div>
     </div>
   );
 };
 
-export default CauroselSection;
+export default SecondCaurosel;
