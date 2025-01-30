@@ -1,4 +1,3 @@
-import React from "react";
 import Input from "../../components/input/Input";
 import CaretDown from "../../assets/CaretDown";
 import SearchIcon from "../../assets/SearchIcon";

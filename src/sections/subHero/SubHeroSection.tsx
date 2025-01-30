@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./subHeroSection.module.css";
 import LeftHeroSub from "../../assets/LeftHeroSub";
 import Button from "../../components/botton/Button";

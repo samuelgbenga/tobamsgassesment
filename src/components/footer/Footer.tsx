@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "./footer.module.css";
 import Button from "../botton/Button";
 import Logo from "../../assets/Logo";
