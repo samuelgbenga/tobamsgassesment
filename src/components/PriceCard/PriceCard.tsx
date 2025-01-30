@@ -1,6 +1,6 @@
 import React from 'react';
 import { PriceCardProps } from '../../interface/interface';
-import styles from './PriceCard.module.css';
+import styles from './priceCard.module.css';
 
 const PriceCard:  React.FC<PriceCardProps>  = ({emoji, price, description}) => {
   return (
