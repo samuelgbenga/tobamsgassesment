@@ -37,11 +37,12 @@ export interface ButtonProps {
     noPeopleBidding: number;
     islike: boolean;
     noOfLike: number;
+    bidders?: string[];
   }
 
   export interface FirstCardFooterProps {
     noPeopleBidding: number;
     islike: boolean;
     noOfLike: number;
-   
+    bidders?: string[];
   }

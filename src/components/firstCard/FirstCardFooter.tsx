@@ -8,16 +8,27 @@ const FirstCardFooter: React.FC<FirstCardFooterProps> = ({
   noOfLike,
   noPeopleBidding,
   islike,
+  bidders,
 }) => {
   return (
     <div className={style.firstCardFooter}>
-      <div>
-        images <span className={style.space}></span> {noPeopleBidding}
+      <div className={style.biddersContainer}>
+        <div className={style.bidders}>
+          {bidders && bidders.map((bidder, index) => {
+            return (
+              <span key={index}>
+                <img src={bidder} alt="img" />
+              </span>
+            );
+          })}
+         
+        </div>{" "}
+        <span>{noPeopleBidding}</span> 
       </div>
-      <div>
+      <div className={style.theLikes}>
         {islike ? <LikeIcon /> : <NotLikeIcon />}{" "}
-        <span className={style.space}></span>
-        {noOfLike}
+        <span>{noOfLike}</span>
+        
       </div>
     </div>
   );

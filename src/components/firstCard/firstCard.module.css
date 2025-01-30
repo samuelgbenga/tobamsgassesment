@@ -1,30 +1,3 @@
-:root {
-  --dark-purple: #2a27c9;
-  --light-purple: #514cff;
-  --dark-purple-10: rgba(42, 39, 201, 0.05);
-  --light-purple-15: rgba(81, 76, 255, 0.15);
-
-  --green-accent: #76decc;
-  --pink-accent: #ea6cbc;
-  --red-accent: #fb4539;
-
-  --dark-100: #060714;
-  --dark-90: #262840;
-  --grey-100: #7780a1;
-  --grey-50: #dde0e8;
-  --grey-20: #f1f1f6;
-  --grey-10: #f2f3f6;
-
-  --white: #fff;
-
-  --font-xs: 12px;
-  --font-s: 14px;
-  --font-ms: 16px;
-  --font-l: 20px;
-  --font-xl: 24px;
-
-  --border-thin: solid 0.05px rgba(128, 128, 128, 0.2);
-}
 
 .firstCard {
   min-height: 480px;
@@ -87,8 +60,55 @@
   justify-content: space-between;
   border-top: var(--border-thin);
   padding-top: 7px;
+  font-size: var(--font-xs);
+  align-items: center;
 }
 
 .firstCardFooter > .space {
   margin-left: 8px; /* Adjust as needed */
+  
 }
+
+.bidders {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.biddersContainer{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.bidders > span {
+  width: 30px; /* Adjust size */
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-100); /* Change to your preferred color */
+  color: white;
+  font-size: 14px;
+  border-radius: 50%;
+  position: relative;
+  padding: 4px;
+
+}
+.bidders > span > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.bidders > span:not(:first-child) {
+  margin-left: -8px; /* Overlapping effect */
+}
+
+.theLikes{
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+

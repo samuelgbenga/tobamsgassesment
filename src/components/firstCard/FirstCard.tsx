@@ -12,7 +12,8 @@ const FirstCard: React.FC<FirstCardProps> = ({
   image,
   noOfLike,
   noPeopleBidding,
-  islike
+  islike,
+  bidders
 }) => {
   const firstCard = `${style.firstCard} ${style[variant]}`;
 
@@ -27,7 +28,7 @@ const FirstCard: React.FC<FirstCardProps> = ({
       </div>
       <div className={style.time}><TimeIcon/><span>{time}</span></div>
       <div>
-        <FirstCardFooter noOfLike={noOfLike} noPeopleBidding={noPeopleBidding}  islike={islike} />
+        <FirstCardFooter noOfLike={noOfLike} noPeopleBidding={noPeopleBidding}  islike={islike} bidders={bidders} />
       </div>
     </div>
   );

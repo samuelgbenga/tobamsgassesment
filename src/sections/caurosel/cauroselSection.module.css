@@ -1,0 +1,24 @@
+
+
+.caurosel{
+    height: 95vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+    
+
+}
+
+.caurosel > h2{
+    color: var(--white);
+    margin-bottom: 4rem;
+}
+
+.caurosel > .innerCaurosel{
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    
+    overflow-x: scroll;
+}

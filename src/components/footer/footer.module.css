@@ -1,34 +1,6 @@
 
 
-:root {
 
-    --dark-purple: #2A27C9;
-    --light-purple: #514CFF;
-    --dark-purple-10:  rgba(42, 39, 201, 0.05);
-    --light-purple-15: rgba(81, 76, 255, 0.15);
-  
-    --green-accent: #76DECC;
-    --pink-accent: #EA6CBC;
-    --red-accent: #FB4539;
-  
-    --dark-100  : #060714;
-    --dark-90  : #262840;
-    --grey-100: #7780A1;
-    --grey-50: #DDE0E8;
-    --grey-20: #F1F1F6;
-    --grey-10: #F2F3F6;
-  
-    --white: #fff;
-  
-  
-    --font-xs: 12px;
-    --font-s: 14px;
-    --font-ms: 16px;
-    --font-l: 20px;
-    --font-xl: 24px;
-
-    --border-thin: solid 0.05px rgba(128, 128, 128, 0.2);
-  }
 
   .footer p{
     font-size: var(--font-xs);
