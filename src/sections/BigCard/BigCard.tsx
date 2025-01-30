@@ -1,5 +1,5 @@
 
-import style from "./BigCard.module.css";
+import style from "./bigCard.module.css";
 import PriceCard from "../../components/PriceCard/PriceCard";
 import AvatarIcon from "../../assets/AvatarIcon";
 import WalletIcon from "../../assets/WalletIcon";
