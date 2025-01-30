@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "./BigCard.module.css";
 import PriceCard from "../../components/PriceCard/PriceCard";
 import AvatarIcon from "../../assets/AvatarIcon";

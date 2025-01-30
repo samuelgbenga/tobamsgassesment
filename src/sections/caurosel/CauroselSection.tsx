@@ -1,10 +1,9 @@
-import React from "react";
+
 import FirstCard from "../../components/firstCard/FirstCard";
 import image1 from "../../assets/images/image1.png";
 import image2 from "../../assets/images/image2.png";
 import image3 from "../../assets/images/image3.png";
-import image4 from "../../assets/images/image4.png";
-import image5 from "../../assets/images/image5.png";
+
 import imageB1 from "../../assets/images/imageB1.png";
 import imageB2 from "../../assets/images/imageB2.png";
 import style from "./cauroselSection.module.css";

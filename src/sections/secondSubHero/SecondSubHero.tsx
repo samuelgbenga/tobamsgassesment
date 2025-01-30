@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "./secondSubHero.module.css";
 import SecondSubHeroLeft from "../../assets/SecondSubHeroLeft";
 import SecondSubHeroIcon from "../../assets/SecondSubHeroIcon";
