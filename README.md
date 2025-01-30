@@ -2,49 +2,83 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# React Project Setup Guide
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Prerequisites
+Ensure you have the following installed on your system:
+- [Node.js](https://nodejs.org/) (Recommended: LTS version)
+- [Git](https://git-scm.com/)
+- A package manager: **npm** (comes with Node.js) or **yarn**
 
-## Expanding the ESLint configuration
+## Cloning the Repository
+To clone this React project, open your terminal or command prompt and run:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```sh
+# Replace `your-repo-url` with the actual repository URL
+git github.com:samuelgbenga/tobamsgassesment.git
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+# Navigate into the project directory
+cd your-project-folder
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Installing Dependencies
+This project only uses **react-router-dom** as an external library. Install dependencies using:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+```sh
+# Using npm
+npm install
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+# OR using yarn
+yarn install
 ```
+
+## Running the Project
+Start the development server with:
+
+```sh
+# Using npm
+npm start
+
+# OR using yarn
+yarn start
+```
+
+The app should now be running at [http://localhost:3000](http://localhost:3000/) in your browser.
+
+## Project Structure
+```
+├── src
+│   ├── components  # Reusable components
+│   ├── assets      # images and svg use
+│   ├── interface  # Define the props type
+│   ├── layouts     # layout structure for pages  
+│   ├── sections    # a break down of a single page
+│   ├── pages        # Page components
+│   ├── roueter.js       # React Router configurations
+│   ├── main.tsx       # Root component
+│   ├── index.css     # css
+├── public           # Static assets
+├── package.json     # Project metadata & dependencies
+├── README.md        # Documentation
+```
+
+## Building for Production
+To create an optimized production build, run:
+
+```sh
+# Using npm
+npm run build
+
+# OR using yarn
+yarn build
+```
+
+This will generate a `build` folder with the compiled files ready for deployment.
+
+## License
+This project is open-source. Feel free to modify and distribute it as per the license specified in this repository.
+
+---
+
+Happy coding! 🚀
+
